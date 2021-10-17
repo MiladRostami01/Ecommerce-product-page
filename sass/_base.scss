@@ -1,0 +1,32 @@
+$Orange: hsl(26, 100%, 55%);
+$Pale-orange: hsl(25, 100%, 9%);
+$Very-vark-blue: hsl(220, 13%, 13%);
+$Dark-grayish-blue: hsl(219, 9%, 5%);
+$Grayish-blue: hsl(220, 1%, 75%);
+$Light-grayish-blue: hsl(223, 6%, 98%);
+$White: hsl(0, 0%, 100%);
+$Black: hsl(0, 0%, 0%);
+// opacity 75%
+
+$text-size: 16px;
+
+@font-face {
+  font-family: 'kumbh';
+  src: url(../fonts/font-types/KumbhSans-Regular.ttf);
+}
+
+$trans-1: all 0.1s linear;
+$trans-3: all 0.3s linear;
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  width: 100%;
+  height: 100vh;
+  font-family: 'kumbh';
+}
+

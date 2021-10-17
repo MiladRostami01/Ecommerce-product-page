@@ -1,0 +1,107 @@
+.custome {
+  &-overlay{
+    display: none;
+    opacity: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: $Black;
+    opacity: 75%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 100;
+  }
+
+  &-top-menu {
+    border-bottom: 1px solid $Grayish-blue;
+  }
+
+  &-top-menu-ul {
+    font-size: $text-size;
+    font-weight: 700;
+    margin-left: 20px;
+
+    li {
+      margin-left: 20px;
+      padding: 25px 0px;
+      transition: all 0.3s linear;
+
+      &:hover {
+        box-shadow: 0px -3px $Orange inset;
+      }
+    }
+  }
+
+  &-user-img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-left: 2rem;
+    transition: all 0.1s linear;
+    cursor: pointer;
+
+    img {
+      width: 100%;
+      height: 100%;
+    }
+
+    &:hover {
+      border: 1px solid $Orange;
+    }
+  }
+
+  &-cart{
+    position: relative;
+    cursor: pointer;  
+  
+    &-count{
+      position: absolute;
+      top: -5px;
+      left: 10px;
+      background-color: $Orange;
+      color: $White;
+      padding: 0 5px;
+      border-radius: 50%;
+      font-size: 12px;
+    }
+  }
+
+  &-sidebar-menu{
+    display: none;
+    opacity: 0;
+    transform: translateX(-100%);
+    background-color: $White;
+    padding: 20px;
+    width: 60%;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+    color: $Grayish-blue ;
+    font-size: 20px;
+    font-weight: 900;
+    z-index: 200;
+
+    ul{
+      margin-top: 20px;
+
+      li a{
+        color: $Dark-grayish-blue;
+
+        &:hover{
+          color: $Orange;
+        }
+        &:focus{
+          color: $Orange;
+        }
+      }
+    }
+
+    span{
+      cursor: pointer;
+    }
+  }
+}
+
+
+
