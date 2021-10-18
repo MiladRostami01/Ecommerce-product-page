@@ -1,0 +1,10 @@
+@media only screen and (max-width: 576px) {
+  .custome {
+    &-cart-box {
+      width: 90%;
+      height: 250px;
+      top: 80px;
+      right: 5%;
+    }
+  }
+}
