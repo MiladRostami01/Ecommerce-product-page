@@ -1,5 +1,5 @@
 .custome {
-  &-overlay{
+  &-overlay {
     display: none;
     opacity: 0;
     width: 100%;
@@ -10,6 +10,38 @@
     top: 0;
     left: 0;
     z-index: 100;
+  }
+
+  &-cart-box {
+    display: none;
+    opacity: 0;
+    width: 350px;
+    height: 250px;
+    background-color: $White;
+    position: absolute;
+    top: 80px;
+    right: 50px;
+    border-radius: 10px;
+    box-shadow: 0px 10px 50px -25px black;
+
+    h5 {
+      border-bottom: 1px solid $Grayish-blue;
+      padding: 1rem;
+      font-weight: 700;
+    }
+
+    div {
+      padding: 1rem;
+      text-align: center;
+
+
+      p {
+        font-size: $text-size;
+        font-weight: 700;
+        color: $Grayish-blue;
+        transform: translate(0, 100%);
+      }
+    }
   }
 
   &-top-menu {
@@ -50,11 +82,11 @@
     }
   }
 
-  &-cart{
+  &-cart {
     position: relative;
-    cursor: pointer;  
-  
-    &-count{
+    cursor: pointer;
+
+    &-count {
       position: absolute;
       top: -5px;
       left: 10px;
@@ -66,7 +98,7 @@
     }
   }
 
-  &-sidebar-menu{
+  &-sidebar-menu {
     display: none;
     opacity: 0;
     transform: translateX(-100%);
@@ -77,31 +109,108 @@
     position: absolute;
     top: 0;
     left: 0;
-    color: $Grayish-blue ;
+    color: $Grayish-blue;
     font-size: 20px;
     font-weight: 900;
     z-index: 200;
 
-    ul{
+    ul {
       margin-top: 20px;
 
-      li a{
+      li a {
         color: $Dark-grayish-blue;
 
-        &:hover{
+        &:hover {
           color: $Orange;
         }
-        &:focus{
+
+        &:focus {
           color: $Orange;
         }
       }
     }
 
-    span{
+    span {
       cursor: pointer;
     }
   }
 }
 
+// content 
+.custome {
+  &-gallery {
+    background-color: $Orange;
+  }
 
+  // desciption 
+  &-description {
 
+    h1 {
+      font-weight: 900;
+      margin-bottom: 30px;
+    }
+
+    p {
+      color: $Gray;
+      font-size: $text-size;
+      line-height: 1.5rem;
+      margin-bottom: 20px;
+    }
+  }
+
+  &-company {
+    color: $Orange;
+    font-size: $text-size;
+    font-weight: 900;
+  }
+
+  &-price{
+    font-size: 28px;
+    font-weight: 900;
+  }
+
+  &-price-off{
+    margin-left: 20px;
+    background-color: $very-pale-orang;
+    color: $Orange;
+    padding: 2px 5px;
+    border-radius: 5px;
+    font-weight: 900;
+  }
+
+  &-real-price{
+    font-weight: 900;
+    color: $Grayish-blue;
+    text-decoration: line-through;
+    margin-bottom: 20px;
+  }
+
+  &-btns{
+    a,label{
+      outline: none;
+      background-color: $Light-grayish-blue;
+      font-weight: 900;
+      padding: 15px;
+      border-radius: 7px;
+    }
+
+    button{
+      background-color: $Orange;
+      color: $White;
+      font-size: 15px;
+      font-weight: 900;
+      border-radius: 7px;
+
+      &:hover{
+        color: $White;
+        opacity: 75%;
+      }
+
+      svg{
+        margin-right: 1rem;
+      }
+    }
+  }
+
+  //desciption end  
+}
