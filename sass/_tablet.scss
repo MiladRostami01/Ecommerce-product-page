@@ -1,16 +1,59 @@
 @media only screen and (max-width: 992px) {
-  .custome {
-    &-cart-box {
-      // width: 80%;
-      // height: 300px;
-      // top: 80px;
-      // right: 10%;
-    }
 
-    &-btns{
-      button{
+  // Menu
+  // .mr {}
+
+  // Content
+  .mr {
+    &-btns {
+      button {
         margin-top: 20px;
       }
     }
+
+    &-content {
+      margin: 20px 0 !important;
+    }
+
+    // gallery  
+    &-gallery {
+      margin: 0 !important;
+    }
+
+    &-gallery-show {
+      width: 100%;
+      height: 500px;
+      border-radius: 20px;
+      overflow: hidden;
+      background-image: url(/images/image-product-1.jpg);
+      background-size: cover;
+      background-position: center;
+      margin-bottom: 0 !important;
+    }
+
+    &-image-list {
+      display: none;
+      justify-content: none;
+    }
+
+    // description 
+    &-description {
+      margin: 0 !important;
+
+      h1 {
+        font-weight: 900;
+        margin-bottom: 30px;
+      }
+
+      p {
+        color: $Gray;
+        font-size: $text-size;
+        line-height: 1.5rem;
+        margin-bottom: 20px;
+      }
+    }
   }
+
+  // Public css
+
 }

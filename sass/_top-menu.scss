@@ -1,62 +1,25 @@
 %image-list {
-  width: 100px;
+  width: 20%;
   height: 100px;
   border-radius: 10px;
   background-size: cover;
+  background-position: center;
   cursor: pointer;
-  
 
-  &:hover{
+
+  &:hover {
     opacity: 75%;
+    box-shadow: 0px 0px 0px 3px $Orange inset;
+  }
+
+  &:focus{
+    opacity: 0;
+    box-shadow: 0px 0px 0px 10px $Orange;
   }
 }
 
-.custome {
-  &-overlay {
-    display: none;
-    opacity: 0;
-    width: 100%;
-    height: 100vh;
-    background-color: $Black;
-    opacity: 75%;
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: 100;
-  }
-
-  &-cart-box {
-    display: none;
-    opacity: 0;
-    width: 350px;
-    height: 250px;
-    background-color: $White;
-    position: absolute;
-    top: 80px;
-    right: 50px;
-    border-radius: 10px;
-    box-shadow: 0px 10px 50px -25px black;
-
-    h5 {
-      border-bottom: 1px solid $Grayish-blue;
-      padding: 1rem;
-      font-weight: 700;
-    }
-
-    div {
-      padding: 1rem;
-      text-align: center;
-
-
-      p {
-        font-size: $text-size;
-        font-weight: 700;
-        color: $Grayish-blue;
-        transform: translate(0, 100%);
-      }
-    }
-  }
-
+// Menus
+.mr {
   &-top-menu {
     border-bottom: 1px solid $Grayish-blue;
   }
@@ -67,9 +30,9 @@
     margin-left: 20px;
 
     li {
+      transition: $trans-3;
       margin-left: 20px;
       padding: 25px 0px;
-      transition: all 0.3s linear;
 
       &:hover {
         box-shadow: 0px -3px $Orange inset;
@@ -111,18 +74,22 @@
     }
   }
 
+  // &-moblie-menu {
+  //   font-size: 1.5rem;
+  //   margin-right: 1rem !important;
+  // }
+
   &-sidebar-menu {
-    display: none;
-    opacity: 0;
-    transform: translateX(-100%);
-    background-color: $White;
-    padding: 20px;
+    transition: $trans-3;
     width: 60%;
-    height: 100vh;
-    position: absolute;
+    height: 100%;
+    position: fixed;
     top: 0;
     left: 0;
+    transform: translateX(0);
+    background-color: $White;
     color: $Grayish-blue;
+    padding: 20px;
     font-size: 20px;
     font-weight: 900;
     z-index: 200;
@@ -149,22 +116,16 @@
   }
 }
 
-// content 
-.custome {
-
-  //gallery start
-  &-gallery {
-    // background-color: $Orange;
-
-  }
-
+// Content 
+.mr {
+  //gallery
   &-gallery-show {
     width: 100%;
     height: 400px;
-    border-radius: 20px;
     overflow: hidden;
     background-image: url(/images/image-product-1.jpg);
     background-size: cover;
+    border-radius: 20px;
     margin-bottom: 2rem;
   }
 
@@ -192,7 +153,6 @@
     @extend %image-list;
     background-image: url(/images/image-product-4-thumbnail.jpg);
   }
-
   //gallery end
 
 
@@ -270,8 +230,67 @@
       }
     }
   }
-
   //desciption end  
+}
+
+// Public css
+.mr {
+  &-overlay {
+    opacity: 0;
+    width: 100%;
+    height: 100%;
+    background-color: $Black;
+    opacity: 75%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
+  }
+
+  &-cart-box {
+    width: 350px;
+    height: 250px;
+    background-color: $White;
+    position: absolute;
+    top: 80px;
+    right: 50px;
+    border-radius: 10px;
+    box-shadow: 0px 10px 50px -25px black;
+    transform: translateX(0px);
+    transition: all .3s ease;
+    z-index: 50;
+
+    h5 {
+      border-bottom: 1px solid $Grayish-blue;
+      padding: 1rem;
+      font-weight: 700;
+    }
+
+    div {
+      padding: 1rem;
+      text-align: center;
 
 
+      p {
+        font-size: $text-size;
+        font-weight: 700;
+        color: $Grayish-blue;
+        transform: translate(0, 100%);
+      }
+    }
+  }
+
+  &-hide-cartbox {
+    opacity: 0 ;
+    height: 0 ;
+  }
+
+  &-hide-sidebar {
+    transform: translateX(-100%) ;
+  }
+
+  &-hide-overlay {
+    opacity: 0 ;
+    transform: translateX(-100%);
+  }
 }
