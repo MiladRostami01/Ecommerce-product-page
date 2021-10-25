@@ -1,0 +1,57 @@
+@font-face {
+  font-family: 'icomoon';
+  src:  url('../fonts/icon-fonts/icomoon.eot?e8qvzz');
+  src:  url('../fonts/icon-fonts/icomoon.eot?e8qvzz#iefix') format('embedded-opentype'),
+    url('../fonts/icon-fonts/icomoon.ttf?e8qvzz') format('truetype'),
+    url('../fonts/icon-fonts/icomoon.woff?e8qvzz') format('woff'),
+    url('../fonts/icon-fonts/icomoon.svg?e8qvzz#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-menu:before {
+  content: "\e900";
+  color: #69707d;
+}
+.icon-next:before {
+  content: "\e902";
+}
+.icon-plus:before {
+  content: "\ea0a";
+  color: #ff7d1a;
+}
+.icon-minus:before {
+  content: "\ea0b";
+  color: #ff7d1a;
+}
+.icon-previous:before {
+  content: "\e904";
+}
+.icon-cart:before {
+  content: "\e905";
+  font-size: 22px;
+}
+.icon-close:before {
+  content: "\e906";
+  color: #69707d;
+}
+.icon-delete:before {
+  content: "\e907";
+  color: #c3cad9;
+}

@@ -66,11 +66,12 @@ body {
 .mr-cart {
   position: relative;
   cursor: pointer;
+  color: #69707d;
 }
 .mr-cart-count {
   position: absolute;
-  top: -5px;
-  left: 10px;
+  top: -8px;
+  left: 12px;
   background-color: #ff7d1a;
   color: white;
   padding: 0 5px;
@@ -173,6 +174,9 @@ body {
   font-weight: 900;
   padding: 15px;
   border-radius: 7px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .mr-btns button {
   width: 100%;
@@ -183,10 +187,16 @@ body {
   border-radius: 7px;
   transition: all 0.1s linear;
   padding: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .mr-btns button:hover {
   color: white;
   opacity: 75%;
+}
+.mr-btns button span {
+  margin: 0 0.5rem;
 }
 .mr-btns button svg {
   margin-right: 1rem;
@@ -234,6 +244,7 @@ body {
 }
 .mr-product-delete {
   cursor: pointer;
+  text-decoration: none;
 }
 .mr-product-img {
   width: 75px;

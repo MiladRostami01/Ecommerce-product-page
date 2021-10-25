@@ -61,11 +61,12 @@
   &-cart {
     position: relative;
     cursor: pointer;
+    color: #69707d;
 
     &-count {
       position: absolute;
-      top: -5px;
-      left: 10px;
+      top: -8px;
+      left: 12px;
       background-color: $Orange;
       color: $White;
       padding: 0 5px;
@@ -210,6 +211,9 @@
       font-weight: 900;
       padding: 15px;
       border-radius: 7px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
     }
 
     button {
@@ -221,10 +225,17 @@
       border-radius: 7px;
       transition: $trans-1;
       padding: 15px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
 
       &:hover {
         color: $White;
         opacity: 75%;
+      }
+
+      span {
+        margin: 0 0.5rem;
       }
 
       svg {
@@ -284,8 +295,9 @@
     }
   }
 
-  &-product-delete{
+  &-product-delete {
     cursor: pointer;
+    text-decoration: none;
   }
 
   &-product-img {
