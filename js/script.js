@@ -13,7 +13,6 @@ const labelCount = document.querySelector('.count-lable')
 const addToCartBtn =document.querySelector('.add-to-cart')
 const cartCount = document.querySelector('.mr-cart-count')
 
-
 const cartResult = document.querySelector('.mr-cart-content')
 
 
@@ -75,12 +74,12 @@ addToCartBtn.addEventListener('click', () => {
   <div class="mr-cart-result">
     <div class="mr-product-img"><img src="images/image-product-1-thumbnail.jpg" alt=""></div>
     <div class="mr-product-description">
-      <p>Fall Limited Edition Sneakers...</p>
-      <p>$125.00 × ${cartCount.innerHTML} <span>$${cartCount.innerHTML * 125}.00</span></p>
+      <p>کفش ورزشی پاییز...</p>
+      <p>250.000 × ${cartCount.innerHTML} = <span>${cartCount.innerHTML * 250}.000 تومان</span></p>
     </div>
     <a class="mr-product-delete"><span class="icon-delete"></span></a>
   </div>
-  <button class="btn mr-checkout-btn">Checkout</button>
+  <button class="btn mr-checkout-btn">پرداخت</button>
   `
 
   const deleteIcon = document.querySelector('.mr-product-delete')
@@ -88,9 +87,10 @@ addToCartBtn.addEventListener('click', () => {
   deleteIcon.addEventListener('click', ()=> {
     cartCount.innerHTML= 0
     cartResult.innerHTML= `
-      <p class="mr-cart-content-empety">Your cart is empty.</p>
+      <p class="mr-cart-content-empety">سبد خرید خالی است.</p>
     `
 
   })
 })
+
 
