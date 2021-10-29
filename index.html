@@ -1,24 +1,15 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" dir="rtl">
 
 <head>
   <meta charset="UTF-8">
   <!-- displays site properly based on user's device -->
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <!--Bootstrap cdn -->
-  <!-- 
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous"> -->
-  <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.rtl.min.css"
-    integrity="sha384-+qdLaIRZfNu4cVPK/PxJJEy0B0f3Ugv8i482AKY7gwXwhaCroABd086ybrVKTa0q" crossorigin="anonymous"> -->
-  <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous">
-  </script> -->
-
-  <!-- Bootstrap source  -->
+  <!-- MoonIcons -->
   <link rel="stylesheet" href="css/icon.css">
-  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <!-- Bootstrap source  -->
+  <link rel="stylesheet" href="css/bootstrap.rtl.min.css">
   <link rel="stylesheet" href="css/style.css">
 
   <title>E-commerce product page</title>
@@ -43,19 +34,19 @@
         <div class="collapse navbar-collapse">
           <ul class="navbar-nav mr-top-menu-ul">
             <li class="nav-item">
-              <a href="#" class="nav-link">Collections</a>
+              <a href="#" class="nav-link">کلکسیون</a>
             </li>
             <li class="nav-item">
-              <a href="#" class="nav-link">Men</a>
+              <a href="#" class="nav-link">مردانه</a>
             </li>
             <li class="nav-item">
-              <a href="#" class="nav-link">Women</a>
+              <a href="#" class="nav-link">زنانه</a>
             </li>
             <li class="nav-item">
-              <a href="#" class="nav-link">About</a>
+              <a href="#" class="nav-link">درباره</a>
             </li>
             <li class="nav-item">
-              <a href="#" class="nav-link">Contact</a>
+              <a href="#" class="nav-link">تماس</a>
             </li>
 
           </ul>
@@ -80,24 +71,24 @@
     <div class="mr-sidebar-menu mr-hide-sidebar">
       <!-- Close icon -->
       <span class="mr-sidebar-close">
-        <div class="icon-close"></div>
+        <div class="icon-close mr-mobile-close"></div>
       </span>
       <!-- menu -->
       <ul class="navbar-nav">
         <li class="nav-item">
-          <a href="#" class="nav-link">Collections</a>
+          <a href="#" class="nav-link">کلکسیون</a>
         </li>
         <li class="nav-item">
-          <a href="#" class="nav-link">Men</a>
+          <a href="#" class="nav-link">مردانه</a>
         </li>
         <li class="nav-item">
-          <a href="#" class="nav-link">Women</a>
+          <a href="#" class="nav-link">زنانه</a>
         </li>
         <li class="nav-item">
-          <a href="#" class="nav-link">About</a>
+          <a href="#" class="nav-link">درباره</a>
         </li>
         <li class="nav-item">
-          <a href="#" class="nav-link">Contack</a>
+          <a href="#" class="nav-link">تماس</a>
         </li>
       </ul>
     </div>
@@ -105,40 +96,104 @@
 
     <!-- Content start-->
     <section class="row my-5 mr-content">
-      <!-- Gallery -->
+      <!-- Gallery start -->
       <div class="col-lg-6 col-md-12 my-5 px-5 mr-gallery">
-        <div class="mr-gallery-show">
+        <!-- Main show -->
+        <div class="mr-main-slides">
+          <img src="images/image-product-1.jpg" class="mr-mainSlide" alt="product1" data-main-id="1">
+          <img src="images/image-product-2.jpg" class="mr-mainSlide" alt="product2" data-main-id="2">
+          <img src="images/image-product-3.jpg" class="mr-mainSlide" alt="product3" data-main-id="3">
+          <img src="images/image-product-4.jpg" class="mr-mainSlide" alt="product4" data-main-id="4">
+
+          <!-- next prve bnt -->
+          <a class="mr-main-prev mr-main-btn">&#10094;</a>
+          <a class="mr-main-next mr-main-btn">&#10095;</a>
         </div>
-        <div class="mr-image-list">
-          <a class="mr-item1 "></a>
-          <a class="mr-item2 "></a>
-          <a class="mr-item3 "></a>
-          <a class="mr-item4 "></a>
+
+        <!-- image list  -->
+        <div class="d-md-flex d-sm-none justify-content-between mr-main-dots">
+          <div class="mr-main-dot-container mr-active">
+            <img src="images/image-product-1-thumbnail.jpg" class="mr-main-dot" alt="product1"
+              data-main-dot-id="1"></img>
+          </div>
+          <div class="mr-main-dot-container">
+            <img src="images/image-product-2-thumbnail.jpg" class="mr-main-dot" alt="product2"
+              data-main-dot-id="2"></img>
+          </div>
+          <div class="mr-main-dot-container">
+            <img src="images/image-product-3-thumbnail.jpg" class="mr-main-dot" alt="product3"
+              data-main-dot-id="3"></img>
+            </<div>
+          </div>
+          <div class="mr-main-dot-container">
+            <img src="images/image-product-4-thumbnail.jpg" class="mr-main-dot" alt="product4"
+              data-main-dot-id="4"></img>
+          </div>
+        </div>
+
+
+        <!-- Modal -->
+        <div class="mr-modal">
+          <div class="icon-close mr-modal-close"></div>
+          <div class="position-relative w-50">
+            <div class="mr-modal-slides">
+              <img src="images/image-product-1.jpg" class="mr-modalSlide" alt="product1" data-modal-id="1">
+              <img src="images/image-product-2.jpg" class="mr-modalSlide" alt="product2" data-modal-id="2">
+              <img src="images/image-product-3.jpg" class="mr-modalSlide" alt="product3" data-modal-id="3">
+              <img src="images/image-product-4.jpg" class="mr-modalSlide" alt="product4" data-modal-id="4">
+
+            </div>
+            <!-- next prve bnt -->
+            <a class="mr-modal-prev mr-modal-btn">&#10094;</a>
+            <a class="mr-modal-next mr-modal-btn">&#10095;</a>
+
+          </div>
+
+          <!-- image list  -->
+          <div class="d-flex justify-content-between mr-modal-dots">
+            <div class="mr-modal-dot-container mr-active">
+              <img src="images/image-product-1-thumbnail.jpg" class="mr-modal-dot" alt="product1"
+                data-modal-dot-id="1"></img>
+            </div>
+            <div class="mr-modal-dot-container">
+              <img src="images/image-product-2-thumbnail.jpg" class="mr-modal-dot" alt="product2"
+                data-modal-dot-id="2"></img>
+            </div>
+            <div class="mr-modal-dot-container">
+              <img src="images/image-product-3-thumbnail.jpg" class="mr-modal-dot" alt="product3"
+                data-modal-dot-id="3"></img>
+            </div>
+            <div class="mr-modal-dot-container">
+              <img src="images/image-product-4-thumbnail.jpg" class="mr-modal-dot" alt="product4"
+                data-modal-dot-id="4"></img>
+            </div>
+          </div>
         </div>
       </div>
+      <!-- Gallery end -->
+
       <!-- Desciption -->
       <div class="col-lg-6 col-md-12 my-5 p-5 mr-description">
-        <div class="my-2 mr-company">Sneaker Company</div>
-        <h1>Fall Limited Edition Sneakers</h1>
-        <p>These low-profile sneakers are your perfect casual wear companion. Featuring a
-          durable rubber outer sole, they’ll withstand everything the weather can offer.</p>
-        <div><span class="mr-price">$125.00</span><span class="mr-price-off">50%</span></div>
-        <div class="mr-real-price">$250.00</div>
+        <div class="my-2 mr-company">شرکت Sneaker</div>
+        <h1>کفش ورزشی پاییز <span>(مدل محدود)</span></h1>
+        <p>کفش‌های کتانی پاییزی مدل کم حاشیه بهترین همراه شما برای لباس‌های غیررسمی هستند. دارای زیره بیرونی لاستیکی بادوام، با قدرت و توانایی تحمل بالا در سطوح مختلف </p>
+        <div><span class="mr-price">۲۵۰.۰۰۰ تومان</span><span class="mr-price-off">۵۰٪</span></div>
+        <div class="mr-real-price">۵۰۰.۰۰۰ تومان</div>
 
         <div class="row mr-btns">
           <div class="col-lg-4 col-md-12 btn-group">
-            <a class="btn mines-btn">
-              <span class="icon-minus"></span>
-            </a>
-            <label for="" class="btn count-lable">1</label>
             <a class="btn plus-btn">
               <span class="icon-plus"></span>
+            </a>
+            <label for="" class="btn count-lable">1</label>
+            <a class="btn mines-btn">
+              <span class="icon-minus"></span>
             </a>
           </div>
           <div class="col-lg-8 col-md-12">
             <button class="btn add-to-cart">
-              <span class="icon-cart"></span>    
-              <span>Add to cart</span>
+              <span class="icon-cart"></span>
+              <span>افزودن به سبد خرید</span>
             </button>
           </div>
         </div>
@@ -154,15 +209,16 @@
 
   <!-- Cartbox start -->
   <div class="mr-cart-box mr-hide-cartbox">
-    <h5 class="mr-cart-title">cart</h5>
+    <h5 class="mr-cart-title">سبد خرید</h5>
     <div class="mr-cart-content">
-      <p class="mr-cart-content-empety">Your cart is empty.</p>
+      <p class="mr-cart-content-empety">سبد خرید خالی است.</p>
 
     </div>
   </div>
   <!-- Cartbox end -->
 
   <script src="js/bootstrap.bundle.min.js"></script>
+  <script src="js/slider.js"></script>
   <script src="js/script.js"></script>
 </body>
 
