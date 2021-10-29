@@ -13,6 +13,13 @@ $Black: hsl(0, 0%, 0%);
 $text-size: 16px;
 
 @font-face {
+  font-family: 'vazir';
+  src: url(../fonts/font-types/vazir/Vazir-Medium.ttf);
+  src: url(../fonts/font-types/vazir/Vazir-Medium.eot),
+  url(../fonts/font-types/vazir/Vazir-Medium.woff),
+  url(../fonts/font-types/vazir/Vazir-Medium.woff2);
+}
+@font-face {
   font-family: 'kumbh';
   src: url(../fonts/font-types/KumbhSans-Medium.ttf);
 }
@@ -24,11 +31,12 @@ $trans-3: all 0.3s linear;
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: 'vazir';
+  direction: rtl;
 }
 
 body {
   width: 100%;
   height: 100vh;
-  font-family: 'kumbh';
   position: relative;
 }

@@ -25,15 +25,20 @@
       height: 500px;
       border-radius: 20px;
       overflow: hidden;
-      background-image: url(/images/image-product-1.jpg);
-      background-size: cover;
-      background-position: center;
       margin-bottom: 0 !important;
     }
 
-    &-image-list {
+    &-main-dot {
       display: none;
       justify-content: none;
+    }
+
+    &-active{
+      display: none;
+    }
+
+    &-main-btn{
+      display: block;
     }
 
     // description 

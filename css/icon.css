@@ -49,7 +49,6 @@
 }
 .icon-close:before {
   content: "\e906";
-  color: #69707d;
 }
 .icon-delete:before {
   content: "\e907";
