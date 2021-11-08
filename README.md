@@ -32,8 +32,8 @@ Users should be able to:
 
 ### Links
 
-- Live Site URL: [Add live site URL here](https://ecommerce-product-page-xi.vercel.app/)
-- Solution URL: [Add solution URL here](https://github.com/MiladRostami01/Ecommerce-product-page)
+- Live Site URL: [Live](https://ecommerce-product-page-xi.vercel.app/)
+- Solution URL: [solution](https://github.com/MiladRostami01/Ecommerce-product-page)
 
 ## My process
 
